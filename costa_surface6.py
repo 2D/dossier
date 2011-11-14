@@ -1,4 +1,3 @@
-
 import rhinoscriptsyntax as rs, Rhino
 import cmath, math
 def zeta_ep(z,g2,g3):
@@ -77,3 +76,33 @@ if( __name__ == "__main__" ):
     #rs.AddSrfControlPtGrid( (len(u),len(v)), pts )
 #print pts
     
+    """
+    Complex z1 = z1(a, b, n, k1);
+         Complex z2 = z2(a, b, n, k2);
+
+
+         float x_new = (float)(scal * z1.getRe());
+         float y_new = (float)(scal * z2.getRe());
+         float z_new = (float)(scal * (
+         Math.cos(Alpha) * z1.getIm() +
+           Math.sin(Alpha) * z2.getIm()));
+
+         xPoints.add(x_new);
+         yPoints.add(y_new);
+         zPoints.add(z_new);
+
+    Надеюсь, что называл функции понятно и тут все ясно написал.
+    
+    Alpha - угол камеры
+    z1.getRe() - функция взятия действит. части (класс комплексного числа
+    описан в другом фале (в процессинге должны появиться вкладки)).
+    scal - просто масштаб.
+    
+    z1(a, b, n, k1) :
+    a - меняется в диапазоне [-1, 1];
+    b - [0, 1.7] (на самом деле до П/2);
+    n - степень для вычисления числа (она не меняется, воспринимай, как параметр);
+    k1 - k1 = [0; n - 1];
+    возвращает комплексное число.
+    
+    """
