@@ -1,4 +1,3 @@
-
 import rhinoscriptsyntax as rs, Rhino
 import cmath, math
 def zeta_ep(z,g2,g3):
@@ -75,5 +74,5 @@ if( __name__ == "__main__" ):
             pts.append(pt)
             print "pt:",pt
     #rs.AddSrfControlPtGrid( (len(u),len(v)), pts )
-#print pts
+    #print pts
     
