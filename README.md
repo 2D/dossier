@@ -8,4 +8,7 @@ In this repo, I discuss projects I have participated during my carrier.
 
 WIP
 
+Experimenting with UI/UX as 👉🏻 https://www.fullstackpython.com/static-site-generator.html
+
+
 Working Version...
